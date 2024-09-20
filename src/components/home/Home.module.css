@@ -1,26 +1,2 @@
 .container {
 }
-
-.header {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  padding: 0.4rem 1.25rem;
-  text-align: center;
-}
-
-.header h1 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.header div {
-  cursor: pointer;
-}
-
-h1 {
-  font-size: 100%;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-}

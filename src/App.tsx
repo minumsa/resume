@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import NotFound from "./components/@common/NotFound";
 import Projects from "./components/projects/Projects";
+import { Layout } from "./components/@common/Layout";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Layout>
+      <RouterProvider router={router} />
+    </Layout>
+  );
 }
 
 export default App;
