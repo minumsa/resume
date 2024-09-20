@@ -1,9 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import React from "react";
-import NotFound from "./components/@common/NotFound.tsx";
-import Home from "./components/home/Home.tsx";
-import Projects from "./components/projects/Projects.tsx";
+import Home from "./components/home/Home";
+import NotFound from "./components/@common/NotFound";
+import Projects from "./components/projects/Projects";
 
 const router = createBrowserRouter([
   {
