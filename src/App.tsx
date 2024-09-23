@@ -1,26 +1,17 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import NotFound from "./components/@common/NotFound";
 import Projects from "./components/projects/Projects";
 import { Layout } from "./components/@common/Layout";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-    errorElement: <NotFound />,
-  },
-]);
-
 function App() {
   return (
     <Layout>
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Home />} errorElement={<NotFound />} />
+        <Route path="/projects" element={<Projects />} errorElement={<NotFound />} />
+      </Routes>
+      {/* <RouterProvider router={router} /> */}
     </Layout>
   );
 }
