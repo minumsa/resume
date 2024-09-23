@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   const goToQuestions = () => {
-    navigate("/questions");
+    navigate("/qna");
   };
 
   return (
