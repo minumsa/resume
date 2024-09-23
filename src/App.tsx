@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
 import Home from "./components/home/Home";
 import NotFound from "./components/@common/NotFound";
 import Projects from "./components/projects/Projects";
